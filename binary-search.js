@@ -34,7 +34,7 @@ function bynarySearch(list, target) {
         }
 
         if (left > right) {
-            return `${target} não existe no array`
+            return `${target} don't exists`
         }
     }
 }
