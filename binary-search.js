@@ -12,10 +12,10 @@ list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10,
 secondList = [0, 1, 40, 44, 53, 62, 80, 92, 99, 123, 124]
 
 thirdList = ['Ana', 'Carlos', 'Dora', 'Guilherme', 'Ingrid', 
-'Joelma', 'Joelson', 'Kaio', 'Lucas', 'Leonardo', 'Marcos', 
+'Joelma', 'Joelson', 'Kaio', 'Leonardo', 'Lucas', 'Marcos', 
 'Orlando', 'Richard', 'Vitoria', 'Willamy']
 
-function bynarySearch(list, target) {
+function binarySearch(list, target) {
     let left = 0
     let right = list.length - 1
 
@@ -39,6 +39,4 @@ function bynarySearch(list, target) {
     }
 }
     
-console.log(bynarySearch(list, 50))
-console.log(bynarySearch(secondList, 80))
-console.log(bynarySearch(thirdList, 'Joelma'))
+console.log(binarySearch(thirdList, "Leonardo"))
