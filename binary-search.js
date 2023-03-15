@@ -19,7 +19,7 @@ function binarySearch(list, target) {
     let left = 0
     let right = list.length - 1
 
-    while (true) {
+    while (left <= right) {
         let middlePosition = Math.floor((left + right) / 2)
         let middleElement = list[middlePosition]
 
@@ -32,11 +32,10 @@ function binarySearch(list, target) {
         } else if (middleElement > target) {
             right = middlePosition - 1
         }
-
-        if (left > right) {
-            return `${target} don't exists`
-        }
     }
+    return `${target} don't exists`
 }
     
+console.log(binarySearch(list, 123))
+console.log(binarySearch(secondList, 80))
 console.log(binarySearch(thirdList, "Leonardo"))
